@@ -10,7 +10,6 @@ var app = express()
 app.set('view engine', 'ejs');
 // link static files to client
 app.use('/', express.static('app'))
-app.use('/javascript', express.static(path.join(__dirname + '/app/javascript')))
 app.use('/bower_component', express.static(path.join(__dirname + '/app/bower_components')))
 
 app.use(logger('dev'))
